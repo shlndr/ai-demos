@@ -1,0 +1,31 @@
+version: '3.8'
+services:
+  unified-frontend:
+    build: ./unified-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - chatbot-backend
+      - dashboard-backend
+      - classifier-backend
+      - mlops-backend
+
+  chatbot-backend:
+    build: ./chatbot/backend
+    ports:
+      - "8001:8000"
+
+  dashboard-backend:
+    build: ./predictive-dashboard/backend
+    ports:
+      - "8002:8000"
+
+  classifier-backend:
+    build: ./medical-image-classifier/backend
+    ports:
+      - "8003:8000"
+
+  mlops-backend:
+    build: ./mlops-pipeline/backend
+    ports:
+      - "8004:8000"

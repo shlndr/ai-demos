@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+venv/
+ENV/
+.env
+.env.*
+
+# Jupyter
+.ipynb_checkpoints
+
+# Node
+node_modules/
+build/
+dist/
+.npm/
+*.log
+
+# React
+*.env.local
+*.env.development.local
+*.env.test.local
+*.env.production.local
+
+# Docker
+*.pid
+*.seed
+*.pid.lock
+
+# Data/Models
+*.joblib
+*.h5
+*.pth
+*.ckpt
+*.pt
+*.onnx
+*.csv
+*.tsv
+*.xlsx
+*.db
+*.sqlite3
+mlruns/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Misc
+*.bak
+*.swp
+*.tmp
+.idea/
+.vscode/
+
+# Ignore build output from unified-frontend
+unified-frontend/build/
+
+# Ignore local deployment/test folders
+/deploy/
+/data/ 
