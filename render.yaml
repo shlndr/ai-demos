@@ -1,0 +1,45 @@
+services:
+  - type: web
+    name: unified-frontend
+    env: docker
+    repo: https://github.com/shlndr/ai-demos
+    branch: master
+    rootDir: unified-frontend
+    plan: free
+    autoDeploy: true
+
+  - type: web
+    name: chatbot-backend
+    env: docker
+    repo: https://github.com/shlndr/ai-demos
+    branch: master
+    rootDir: chatbot/backend
+    plan: free
+    autoDeploy: true
+
+  - type: web
+    name: dashboard-backend
+    env: docker
+    repo: https://github.com/shlndr/ai-demos
+    branch: master
+    rootDir: predictive-dashboard/backend
+    plan: free
+    autoDeploy: true
+
+  - type: web
+    name: classifier-backend
+    env: docker
+    repo: https://github.com/shlndr/ai-demos
+    branch: master
+    rootDir: medical-image-classifier/backend
+    plan: free
+    autoDeploy: true
+
+  - type: web
+    name: mlops-backend
+    env: docker
+    repo: https://github.com/shlndr/ai-demos
+    branch: master
+    rootDir: mlops-pipeline/backend
+    plan: free
+    autoDeploy: true
